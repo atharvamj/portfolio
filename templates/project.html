@@ -34,9 +34,9 @@
                     </div>
                     {% endfor %}
                     {% for photo in project['photos'] %}
-                    <div class="item {{'active' if ((loop.index0 == 0) and (not 'videos' in project)) }}">
-                        <img src="{{photo}}" alt="project-photo" style="width:100%;">
-                    </div>
+<!--                    <div class="item {{'active' if ((loop.index0 == 0) and (not 'videos' in project)) }}">-->
+<!--&lt;!&ndash;                        <img src="{{photo}}" alt="project-photo" style="width:100%;">&ndash;&gt;-->
+<!--                    </div>-->
                     {% endfor %}
                 </div>
 
@@ -56,31 +56,29 @@
         {% endif %}
     </div>
 
-    <div class="wrapper scroll-wrapper">
-        <div class="heading">
-            <div class="title">{{ project['name'] }}</div>
-
-            <div class="date">{{ project['date'] }}</div>
-
-            <div class="md-chips">
-                {% for tag in project['tags'] %}
-                <div class="md-chip md-chip-clickable"><a class="md-chip-link" href="/projects?tags={{tag}}">{{tag}}</a>
-                </div>
-                {% endfor %}
-            </div>
-
-            <div class="links">
-                {% if 'github' in project %}
-                <div><a class="github" href={{project['github']}}>Find on Github</a></div>
-                {% elif 'arxiv' in project %}
-                <div><a class="github" href={{project['arxiv']}}>View on Arxiv</a></div>
-                {% elif 'playstore' in project %}
-                <div><a class="github" href={{project['playstore']}}>View on Google Play</a></div>
-                {% endif %}
-            </div>
-        </div>
-        <div class="content">{{ project['description'] | safe }}</div>
-    </div>
-
+<!--    <div class="wrapper scroll-wrapper" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">-->
+    <div class="heading" style="text-align: center;">
+        <div class="title">{{ project['name'] }}</div>
+<!--        <div class="date">{{ project['date'] }}</div>-->
+<!--        <div class="skills">{{ project['skills'] }}</div>-->
+<!--        <div class="md-chips" style="display: flex; justify-content: center; align-items: center;">-->
+<!--            {% for tag in project['tags'] %}-->
+<!--            <div class="md-chip md-chip-clickable" style="margin: 0 5px;">-->
+<!--                <a class="md-chip-link" href="/projects?tags={{tag}}">{{tag}}</a>-->
+<!--            </div>-->
+<!--            {% endfor %}-->
+<!--        </div>-->
+<!--        <div class="links" style="display: flex; justify-content: center; align-items: center;">-->
+<!--            {% if 'github' in project %}-->
+<!--            <div style="margin: 0 5px;"><a class="github" href={{project['github']}}>Find on Github</a></div>-->
+<!--            {% elif 'arxiv' in project %}-->
+<!--            <div style="margin: 0 5px;"><a class="github" href={{project['arxiv']}}>View on Arxiv</a></div>-->
+<!--            {% elif 'playstore' in project %}-->
+<!--            <div style="margin: 0 5px;"><a class="github" href={{project['playstore']}}>View on Google Play</a></div>-->
+<!--            {% endif %}-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="content" style="text-align: center;">{{ project['description'] | safe }}</div>
 </div>
+
 {% endblock %}

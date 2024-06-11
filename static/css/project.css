@@ -1,66 +1,76 @@
 .container {
   height: 100%;
   max-width: none;
-  margin:0;
+  margin: 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
   font-family: 'Open Sans', sans-serif;
 }
 
-.wrapper{
-  width: 50%;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensures vertical alignment of elements */
+  text-align: center; /* Centers text within elements */
 }
 
 .scroll-wrapper::-webkit-scrollbar {
-    display: none;
-    margin-right: 5%;
+  display: none;
+  margin-right: 5%;
 }
 
 .scroll-wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
 }
 
 .fixed-wrapper {
-    position: fixed;
-    right: 50%;
-    top: calc(50% - 275px);
-    display:flex;
-    justify-content:center;
-    height: calc(100vh - 60px);
-    align-items: center;
+  position: fixed;
+  right: 50%;
+  top: calc(50% - 275px);
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  align-items: center;
 }
 
 .carousel-inner .item {
-    max-height: 500px;
-    max-width: 500px;
+  max-height: 500px;
+  max-width: 500px;
 }
 
 .title {
-  font-size: 60px;
-  margin-top:20px;
+  font-size: 50px;
+  margin-top: 20px;
   font-family: 'Roboto', sans-serif;
+  text-align: center; /* Center text */
 }
 
-.links{
-  margin:20px 0px 10px 0px;
+.links {
+  margin: 20px 0px 10px 0px;
+  display: flex;
+  justify-content: center; /* Center links horizontally */
 }
 
 span {
-  display:inline-block;
+  display: inline-block;
   margin: 10px 0 10px 0px;
 }
 
 .lb {
-  display:inline-block;
-  margin-top:20px 0 20px 0px;
+  display: inline-block;
+  margin-top: 20px 0 20px 0px;
 }
 
 .date {
-  margin:0px 100px 20px 0px;
+  margin: 0px 100px 20px 0px;
   color: #555;
+  text-align: center; /* Center text */
 }
 
 @media only screen and (max-width: 1094px) {
@@ -69,6 +79,7 @@ span {
   }
   .container {
     flex-direction: column;
+    align-items: center; /* Center content vertically on mobile */
   }
   .wrapper {
     width: 100%;
@@ -88,7 +99,7 @@ span {
 }
 
 @media only screen and (max-width: 1094px) {
-.item iframe {
+  .item iframe {
     width: auto !important;
   }
 }

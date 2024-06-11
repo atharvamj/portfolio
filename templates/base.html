@@ -3,30 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ common.first_name }} {{ common.last_name }}</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--fonts-->
+    <!-- Fonts -->
     <link rel='stylesheet'
           href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700'
           type='text/css' media='screen'/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">
-
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/base.css') }}">
+
+<!--    <style>-->
+<!--        /* Custom style for geometric design */-->
+<!--        .geometric-design {-->
+<!--            position: absolute;-->
+<!--            top: 0;-->
+<!--            left: 0;-->
+<!--            width: 100%;-->
+<!--            background: linear-gradient(135deg, #000 25%, transparent 25%) -50px 0,-->
+<!--                        linear-gradient(225deg, #000 25%, transparent 25%) -50px 0,-->
+<!--                        linear-gradient(315deg, #000 25%, transparent 25%),-->
+<!--                        linear-gradient(45deg, #000 25%, transparent 25%);-->
+<!--            background-size: 100px 100px;-->
+<!--            background-color: #fff;-->
+<!--            height: 35vh; /* Adjust height as needed */-->
+<!--            z-index: -1;-->
+<!--        }-->
+
+<!--        .navbar-ul, .content {-->
+<!--            position: relative;-->
+<!--            z-index: 1;-->
+<!--        }-->
+
+<!--        .content {-->
+<!--            padding: 20px;-->
+<!--        }-->
+<!--    </style>-->
 
     {% block head %}
     {% endblock %}
 </head>
 <body>
+<div class="geometric-design"></div>
 <div class="navbar-ul">
     <ul id="navbar-list" class="list-inline">
         <li><a class="navbar-ref" href="/">Home</a></li>
         <li><a class="navbar-ref" href="/timeline">Timeline</a></li>
         <li><a class="navbar-ref" href="/projects">Projects</a></li>
-        <li><a class="navbar-ref" href="/reading">Reading</a></li>
+        <li><a class="navbar-ref" href="/reading">Publications</a></li>
     </ul>
 </div>
-{% block body %}
-{% endblock %}
+<div class="content">
+    {% block body %}
+    {% endblock %}
+</div>
 </body>
 </html>

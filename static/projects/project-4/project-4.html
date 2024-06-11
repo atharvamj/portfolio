@@ -1,0 +1,76 @@
+<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: justify;">
+    <h2 style="color: #333; font-size: 24px; margin-top: 20px; border-bottom: 2px solid #ddd; padding-bottom: 5px;">Project Description</h2>
+    <p>This project is the culmination of my Bachelor's degree, representing the synthesis of all the skills I have acquired. Below are the challenges faced during the implementation of the project and the actions taken to address them. If you want to take a look at the code, please follow the GitHub link:</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">1. Definition of Use Case</h3>
+    <p style="margin-left: 20px;"><strong>Situation:</strong> Two use cases were identified - free-flowing crowd and static crowd - each requiring a different approach for density calculation.</p>
+    <p style="margin-left: 20px;"><strong>Task:</strong> Implement a system for density calculation that is suitable for both free-flowing and static crowds.</p>
+    <p style="margin-left: 20px;"><strong>Action:</strong> Choose a thermal imaging approach, where free-flowing crowds are represented as small dots, making density calculation more effective.</p>
+    <p style="margin-left: 20px;"><strong>Result:</strong> A distinction between free-flowing and static crowds was made based on the thermal image characteristics, providing a solution for efficient density calculation.</p>
+    <p style="margin-left: 20px;"><strong>Reflection:</strong> The chosen approach aligns with the visual representation of different crowd types in thermal images, optimizing the system for accurate density calculation in various scenarios.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">2. Thermal Camera</h3>
+    <p style="margin-left: 20px;"><strong>Situation:</strong> The current thermal camera, Megger TC3231, is incompatible with edge devices and has a narrow field of view.</p>
+    <p style="margin-left: 20px;"><strong>Task:</strong> Find a thermal camera solution compatible with Jetson Nano, offering a wider field of view.</p>
+    <p style="margin-left: 20px;"><strong>Action:</strong> Shortlist FLIR Lepton 3 and FLIR BOSON, which are Jetson Nano compatible and have a wider field of view at 92°.</p>
+    <p style="margin-left: 20px;"><strong>Result:</strong> Identified alternative thermal cameras that meet compatibility and field of view requirements for the application.</p>
+    <p style="margin-left: 20px;"><strong>Reflection:</strong> The chosen cameras address the limitations of the current camera, ensuring compatibility and improved coverage for the intended application.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">3. Database</h3>
+    <p style="margin-left: 20px;"><strong>Situation:</strong> Deploying databases on edge devices is challenging, requiring a reliable solution for data storage and retrieval.</p>
+    <p style="margin-left: 20px;"><strong>Task:</strong> Find a suitable database solution that is compatible with edge devices and easy to deploy.</p>
+    <p style="margin-left: 20px;"><strong>Action:</strong> Choose SQLite as it is available with Python 3 packages and eliminates the need for additional database services.</p>
+    <p style="margin-left: 20px;"><strong>Result:</strong> SQLite is selected as the database solution for data storage and retrieval during thermal detection.</p>
+    <p style="margin-left: 20px;"><strong>Reflection:</strong> The choice of SQLite aligns with the need for a lightweight and easy-to-deploy database solution for edge devices.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">4. Jetson Setup</h3>
+    <p style="margin-left: 20px;"><strong>Situation:</strong> The code developed on a laptop needs to be set up on Jetson Nano with specific software versions and packages.</p>
+    <p style="margin-left: 20px;"><strong>Task:</strong> Ensure the correct setup of Jetson Nano with the required software versions and packages.</p>
+    <p style="margin-left: 20px;"><strong>Action:</strong> Install dependencies using the pip3 command on the terminal, including lxml, tqdm, absl-py, matplotlib, easydict, and pillow.</p>
+    <p style="margin-left: 20px;"><strong>Result:</strong> Successful installation of dependencies on Jetson Nano using the pip3 command.</p>
+    <p style="margin-left: 20px;"><strong>Reflection:</strong> The chosen approach of installing dependencies via pip3 ensures compatibility and correct version installations for Jetson Nano.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">5. TensorFlow on Edge</h3>
+    <p style="margin-left: 20px;"><strong>Situation:</strong> Jetpack 4.5 on Jetson Nano does not come with TensorFlow installed, but the code on the laptop uses TensorFlow 2.3 for deep learning.</p>
+    <p style="margin-left: 20px;"><strong>Task:</strong> Install TensorFlow 2.x on Jetson Nano for deep learning compatibility.</p>
+    <p style="margin-left: 20px;"><strong>Action:</strong> Install TensorFlow 2.x on Jetson Nano using the specified command.</p>
+    <p style="margin-left: 20px;"><strong>Result:</strong> Successful installation of TensorFlow 2.x on Jetson Nano.</p>
+    <p style="margin-left: 20px;"><strong>Reflection:</strong> The installation of TensorFlow 2.x ensures compatibility between the code developed on the laptop and the deep learning framework on Jetson Nano.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">6. Model Inference and Setup on Jetson Nano</h3>
+    <p style="margin-left: 20px;"><strong>Situation:</strong> YOLO v4 model needs to be implemented on Jetson Nano, and the process requires sufficient RAM.</p>
+    <p style="margin-left: 20px;"><strong>Task:</strong> Overcome RAM limitations during the YOLO v4 model inference and setup on Jetson Nano.</p>
+    <p style="margin-left: 20px;"><strong>Action:</strong> Increase the swap memory of the Jetson Nano device from 2 GB to 4 GB to address RAM limitations.</p>
+    <p style="margin-left: 20px;"><strong>Result:</strong> Successful completion of the YOLO v4 model inference and setup on Jetson Nano.</p>
+    <p style="margin-left: 20px;"><strong>Reflection:</strong> Increasing swap memory addresses the RAM constraints of Jetson Nano, enabling the successful implementation of the YOLO v4 model.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">7. Algorithm Implementation (YOLO v4)</h3>
+    <p style="margin-left: 20px;"><strong>Situation:</strong> YOLO v4 is chosen for human detection with improvements in mean average precision (mAP) and frames per second over YOLO v3.</p>
+    <p style="margin-left: 20px;"><strong>Task:</strong> Implement YOLO v4 algorithm architecture for human detection.</p>
+    <p style="margin-left: 20px;"><strong>Action:</strong> Use CSPDarknet53 as the backbone, incorporate a modified Path aggregation network, a modified spatial attention module, and a modified spatial pyramid pooling in the neck, and utilize dense prediction for locating bounding boxes and classification.</p>
+    <p style="margin-left: 20px;"><strong>Result:</strong> Successful implementation of YOLO v4 with improved accuracy and speed in human detection.</p>
+    <p style="margin-left: 20px;"><strong>Reflection:</strong> The chosen modifications in the YOLO v4 architecture contribute to enhanced accuracy and efficiency in human detection.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">8. Algorithm Training (YOLO v4)</h3>
+    <p style="margin-left: 20px;"><strong>Situation:</strong> YOLO v4 needs to be trained on a custom dataset to achieve better accuracy in human detection.</p>
+    <p style="margin-left: 20px;"><strong>Task:</strong> Train YOLO v4 on a custom dataset containing thermal and infrared images of crowded environments.</p>
+    <p style="margin-left: 20px;"><strong>Action:</strong> Use transfer learning, annotate the dataset using Roboflow tool, and customize YOLO v4 config file for the specific dataset.</p>
+    <p style="margin-left: 20px;"><strong>Result:</strong> YOLO v4 is successfully trained on the custom dataset, enhancing accuracy in human detection.</p>
+    <p style="margin-left: 20px;"><strong>Reflection:</strong> Transfer learning on a custom dataset provides the algorithm with diverse scenarios, improving its performance in crowded environments.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">Skills and Technologies Implemented:</h3>
+    <ul style="margin-left: 40px;">
+        <li>Flask</li>
+        <li>Numpy</li>
+        <li>Pandas</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>TensorFlow</li>
+        <li>Machine Learning</li>
+        <li>Deep Learning</li>
+        <li>Computer Vision</li>
+        <li>Thermal Imaging</li>
+        <li>Data Preprocessing</li>
+        <li>Model Evaluation</li>
+    </ul>
+</div>

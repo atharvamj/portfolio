@@ -14,6 +14,7 @@
 {% endblock %}
 
 {% block body %}
+
 <div class="container">
     <div class="wrapper fixed-wrapper">
         <section id="terminal">
@@ -27,6 +28,7 @@
                         </div>
                         <span class="title">oh-my-zsh</span>
                     </div>
+
                     <div class="message">
                         <span class='prompt'><span class='user'>{{ common.alias }}</span><span class="at">@</span><span
                                 class="path">/home/{{ common.first_name|lower }}{{ common.last_name|lower }}/</span>><span
@@ -38,41 +40,45 @@
             </div>
         </section>
     </div>
+    <div style="padding-top: 250px;" >
+
+    </div>
     <div class="wrapper scroll-wrapper">
-        <div class="top-text">
-            <p class="text-title desktop-view">{{ common.first_name }}</p>
-            <p class="text-title desktop-view">{{ common.last_name }}</p>
+         <div class="top-text">
+                <img src="static/images/profile-pic.png" alt="Profile Image" style="border-radius: 60%; width: 300px; height: 300px; object-fit: cover; float:left; margin-left: 10 px;">
+<!--            </div>-->
+
+<!--        <div class="top-text">-->
+            <p class="text-title desktop-view">{{ common.first_name }} {{ common.last_name }}</p>
             <p class="text-title mobile-view">{{ common.first_name }} {{ common.last_name }}</p>
-            <div class="social-icons">
-                <a target="_blank" href="https://github.com">
+
+        </div>
+         <div class="middle-text">
+             <p class="text-content">Hello There !!</p>
+                    <p class="text-content">I'm Atharva Joshi, a dedicated data science enthusiast currently pursuing a Master of Science in Data Science at Indiana University, where I'm honing my expertise in Python, R, machine learning, and artificial intelligence. With a strong foundation in applied machine learning, data mining, and bioinformatics, I'm adept at transforming complex datasets into actionable insights.</p>
+                    <p class="text-content">Professionally, I've excelled as a Machine Learning Intern at DOCK-Y TECH LIMITED, where I pioneered advanced object detection technologies and significantly enhanced model accuracy through convolutional neural networks. My tenure at DELOITTE involved revitalizing Salesforce applications, and enhancing operational efficiencies significantly across various sectors.</p>
+                    <p class="text-content">I'm passionate about leveraging my technical skills to drive innovation and improve business outcomes. I've successfully patented a cutting-edge crowd analysis system, underscoring my capability to lead and innovate in the tech space.</p>
+                    <p class="text-content">I'm eager to contribute my expertise in data science and machine learning to your team, and I am excited about the opportunities to create significant impacts together.</p>
+              <p class="text-content"><a href="timeline">For more about me, Take a look at my Career Timeline here.</a></p>
+             <p class="text-content">Let's get in touch!</p>
+
+             <div class="social-icons">
+                <a target="_blank" href="https://github.com/atharvamj">
                     <img class="title-logo" src="static/images/github.svg">
                 </a>
-                <a target="_blank" href="https://www.linkedin.com/">
+                <a target="_blank" href="https://www.linkedin.com/in/atharva-joshi-0806/">
                     <img class="title-logo" src="static/images/linkedin-logo.svg">
                 </a>
-                <a target="_blank" href="https://twitter.com">
-                    <img class="title-logo" src="static/images/twitter.svg">
+                <a target="_blank" href="https://www.kaggle.com/atharvmj082k">
+                    <img class="title-logo" src="static/images/Kaggle.png">
                 </a>
-                <a target="_blank" href="https://www.instagram.com/">
-                    <img class="title-logo" src="static/images/insta.svg">
+                   <a target="_blank" href="mailto:joshiam@iu.edu">
+                    <img class="title-logo" src="static/images/icons8-mail-50.png">
                 </a>
             </div>
-        </div>
-        <div class="middle-text">
-            <p class="text-content">"Spider-Man" is the alias of a student named Peter Parker who, after
-                being bitten by a genetically-altered spider, gains superhuman strength and the spider-like ability to
-                cling to any surface. He vows to use his abilities to fight crime, coming to understand the words of
-                his beloved Uncle Ben: "With great power comes great responsibility.
-            </p>
 
-            <p class="text-content">Let's get in touch!</p>
-
-            <p class="text-content">Peter Parker</p>
-
-            <p class="text-content"><a href="timeline">For more about me, my timeline, read on here.</a></p>
-
-            <br>
-        </div>
+                    <br>
+                </div>
     </div>
 </div>
 {% endblock %}

@@ -15,24 +15,27 @@
         <div class="col s12 m4 l8">
             <span class="date">{{ year.year }}</span>
             <ul class="list">
-                {% for book in year.books %}
+                {% for publication in year.publications %}
                 <li class="item">
                     <div class="icon-title">
-                        {% if book.star %}
+                        {% if publication.award %}
                         <i class="tiny material-icons">star</i>
                         {% else %}
-                        <i class="tiny material-icons">book</i>
+                        <i class="tiny material-icons">description</i>
                         {% endif %}
-                        <span class="title">{{ book.name }}</span>
+                        <span class="title"><a href="{{ publication.link }}" target="_blank">{{ publication.title }}</a></span>
                     </div>
-                    <span class="content">{{ book.review }}</span>
+                    <span class="content"><strong>Abstract:</strong> {{ publication.abstract }}</span>
+                </li>
                 </li>
                 {% endfor %}
             </ul>
-            {% endfor %}
         </div>
+        {% endfor %}
     </div>
     <br>
     <br>
 </div>
+
+
 {% endblock %}

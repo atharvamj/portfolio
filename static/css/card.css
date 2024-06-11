@@ -1,5 +1,5 @@
 #title {
-  font-size: 1.2rem;
+  font-size:  0.9rem;
   font-weight: 300;
 }
 
@@ -27,13 +27,13 @@
   margin:10px;
   max-height: 325px;
   min-height: 325px;
-  max-width: 320px;
+  max-width: 720px;
 }
 
 .card-reveal .card-title {
     overflow: auto;
     white-space: normal;
-    text-overflow: unset;
+    text-overflow: auto;
 }
 
 .md-chip-link {
@@ -42,7 +42,7 @@
   }
 
 .card-image {
-    max-width:400px;
+    max-width:500px;
     display: flex;
     justify-content: center;
 }

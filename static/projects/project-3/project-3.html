@@ -1,0 +1,31 @@
+<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: justify;">
+    <h2 style="color: #333; font-size: 24px; margin-top: 20px; border-bottom: 2px solid #ddd; padding-bottom: 5px;">Project Description</h2>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">Situation:</h3>
+    <p style="margin-left: 20px;">The project focuses on detecting and classifying harmful brain activity, specifically seizures, using Convolutional Neural Networks (CNNs). Epilepsy is a neurological disorder characterized by recurring seizures caused by unusual brain activity, which is challenging to detect and diagnose accurately. The project aims to automate the detection process and classify the types of seizures using EEG signals.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">Task:</h3>
+    <p style="margin-left: 20px;">The primary task was to develop a system capable of automatically detecting and classifying different types of seizures from EEG data. The goal was to use CNN algorithms to convert EEG signals into images and identify the seizure types, improving the early detection and treatment of epilepsy.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">Action:</h3>
+    <p style="margin-left: 20px;"><strong>Dataset Selection and Preparation:</strong> The team used the TUH EEG Dataset due to its extensive collection of EEG recordings categorized into different seizure types. They preprocessed the data by converting EEG signals from the European Data Format (EDF) to spectrograms using the MNE-Python library. They also cleaned and augmented the data to ensure accuracy.</p>
+    <img src="/static/projects/project-3/EEG.png" alt="Dataset Snapshot" style="display: block; margin: 20px auto; max-width: 100%; border-radius: 5px;"/>
+
+    <p style="margin-left: 20px;"><strong>Model Development:</strong> Various CNN architectures were implemented, including ResNet50V2, ResNet152V2, ResNet101, EfficientNetB0, and DenseNet201. Both pre-trained and non-pretrained models were tested. The models were trained using the Adam optimizer with varying learning rates.</p>
+    <p style="margin-left: 20px;"><strong>Model Evaluation:</strong> The models were evaluated based on their training and validation accuracy. The DenseNet201 model showed better outcomes, achieving a high training accuracy but indicating slight overfitting.</p>
+    <img src="/static/projects/project-3/table.png" alt="table Snapshot" style="display: block; margin: 20px auto; max-width: 100%; border-radius: 5px;"/>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">Result:</h3>
+    <p style="margin-left: 20px;">The project demonstrated that CNNs could be used to classify different types of seizures using EEG data converted into spectrograms. The DenseNet201 model achieved the highest training accuracy (87.81%) but showed some overfitting with a validation accuracy of 59.38%. The EfficientNetB0 model also performed well, particularly when using transfer learning.</p>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">Skills and Technologies Implemented:</h3>
+    <ul style="margin-left: 40px;">
+        <li>Data Science and Machine Learning: Knowledge of CNNs, data preprocessing, and model evaluation.</li>
+        <li>Python Programming: Used for data processing, model training, and evaluation.</li>
+        <li>Libraries and Tools: TensorFlow, MNE-Python, and various deep learning frameworks for model implementation.</li>
+        <li>Data Handling: Experience in handling large datasets, data augmentation, and cleaning.</li>
+    </ul>
+
+    <h3 style="color: #333; font-size: 20px; margin-top: 15px;">Reflection:</h3>
+    <p style="margin-left: 20px;">The project successfully created a baseline for classifying EEG signals using CNNs, highlighting the potential of deep learning in medical diagnostics. However, there is a need for further improvements to enhance validation accuracy and reduce overfitting. Future work should focus on creating a more comprehensive dataset, utilizing advanced deep learning models, and potentially developing an application for real-time seizure detection. This project provided valuable insights into the complexities of EEG data and the effectiveness of different CNN architectures in medical applications.</p>
+</div>

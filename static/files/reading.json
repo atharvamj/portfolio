@@ -1,39 +1,24 @@
 [
-  {
-    "year": "To Read (Ordered)",
-    "books": [
-      {
-        "name": "The Incredible Hulk"
-      },
-      {
-        "name": "Tales of Suspense #39 (cover dated March 1963)"
-      }
-    ]
-  },
-  {
-    "year": "2022",
-    "books": [
-      {
-        "name": "Iron Man and Sub-Mariner",
-        "review": "A comic review ..."
-      },
-      {
-        "name": "Iron Man: Director of S.H.I.E.L.D.",
-        "review": "A book review ..."
-      }
-    ]
-  },
-  {
-    "year": "2021",
-    "books": [
-      {
-        "name": "Ready Player One, Ernest Cline",
-        "review": "A short book review ..."
-      },
-      {
-        "name": "1984, George Orwell",
-        "review": "A long book review ..."
-      }
-    ]
-  }
+    {
+        "year": 2022,
+        "publications": [
+            {
+                "title": "A comprehensive comparison between pre-trained and custom trained object detection model for Indian Traffic Scenarios",
+                "abstract": "Artificial intelligence is an emerging field that is undergoing humongous development. Self-driving technology is a major part of that development. Various companies like Tesla, Waymo, Ford, and Audi are part of research and development in this field. The modern self-driving vehicles that work on Level 5 autonomy utilize lidar technology along with computer vision frameworks to get a complete autonomous driving experience. These companies are based in the USA or well-developed countries. Their implementation in India, which is a developing country, is to be determined. To get a fair idea of how these vehicles and their technology will perform in the Indian scenario, a testing plan is devised in this work. In this paper, a YOLO object detection model was custom trained on images taken in the Indian traffic scenario and compared with a pre-trained model which has been trained on COCO dataset which contains traffic images from various foreign countries like the USA and Europe. The comparison has been done on the metrics like accuracy in detection of classes, precision, recall, and F1-score.",
+                "link": "https://link.springer.com/chapter/10.1007/978-981-19-6581-4_17",
+                "award": false
+            }
+        ]
+    },
+    {
+        "year": 2021,
+        "publications": [
+            {
+                "title": "Evaluation of Transformer Model for Conversational Chatbots Using Cosine Similarity",
+                "abstract": "The use of chatbots has seen a significant rise in the past few years, these pieces of software are seen on various E-commerce platforms or banking platforms. These applications mostly involve the use of Rule-based chatbots, in this paper we have explored the possibility of using smart chatbots which can have a free-flowing conversation with the user. The training of these chatbots determines their ability to have a human-like conversation. The transformer model in this study has an encoder-decoder architecture, with a self-attention layer. The self-attention layer helps the model to have a context of the input, which gives it a reference of each word with respect to the other words in the sentence to the model. The model is being trained for various epochs and these outputs have been based against expected output and their similarity is calculated using Cosine Similarity Technique. The results from these tests were observed and presented in the paper.",
+                "link": "https://d1wqtxts1xzle7.cloudfront.net/94013012/Aniket_IJRASET.pdf?1668091246=&response-content-disposition=inline%3B+filename%3DEvaluation_of_Transformer_Model_for_Conv.pdf&Expires=1718064671&Signature=d36NmNe6fFkOC35RC-GP42ZNczoePu0KXTnpelJ7Ls4L9lPak65yztpp~tVKEj8X24sEDvlSIMccalXLMZThU6OLaJot3hNf0EHvEBbqiOAr38x06aejGHdWyc8xNIT10s~juMVqHrQYef4yuUCv-beabdXn3dXerz0RyZM~OFXJ9OB1EvNCXo1kxkXtnfC-5Vgz-u~bF5~SwbEDSTRiI~jDIlYM6XFUohnMkxXkysEOydqtcIhV9R8VOW8FT3~ysYQQ2BUg0KDRzvH~nteNDIMpeJb1-V2~zp7Jx4tyZBgiLYEBwu-UltJZpvYl2WbsYos~n~acm0Id~zfiM8hZnQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA",
+                "award": false
+            }
+        ]
+    }
 ]

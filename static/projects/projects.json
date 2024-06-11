@@ -1,273 +1,97 @@
 {
   "projects": [
     {
-      "name": "Project 1",
+      "name": "Spoiler Detection Using BERT",
       "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
+      "date": "23/12/2023",
+      "short": "Build a Deep Learning Algorithm to detect Spoiler Filled Movie Reviews",
+      "skills": "Flask, Pandas, PyTorch, Python, scikit-learn",
       "weight": 1,
       "tags": [
-        "tech"
+        "Deep Learning",
+        "NLP"
       ],
       "photos": [
-        "/static/projects/project-1/img.jpg"
+        "static/projects/project-1/Spoiler.png"
       ]
     },
     {
-      "name": "Project 2",
+      "name": "Multi-Class Cirrhosis Prediction",
       "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
+      "date": "23/12/2023",
+      "short": "Predict multiple classes of cirrhosis using machine learning algorithms.",
+      "skills": "Matplotlib, Numpy, Pandas, Python, scikit-learn",
       "weight": 1,
       "tags": [
-        "media"
+        "Machine Learning",
+        "Healthcare"
       ],
       "photos": [
-        "/static/projects/project-2/img.jpg"
+        "/static/projects/project-2/Liver.png"
       ]
     },
     {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 2,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
+  "name": "Classifying Harmful Brain Activity Using Convolutional Neural Networks",
+  "link": "project-3",
+  "date": "02/05/2024",
+  "short": "Automate the detection and classification of epileptic seizures using EEG data and convolutional neural networks.",
+  "skills": "Python, TensorFlow, MNE-Python, Data Preprocessing, CNN, Deep Learning",
+  "weight": 1,
+  "tags": [
+    "Machine Learning",
+    "Medical Imaging",
+    "EEG",
+    "Seizure Detection"
+  ],
+  "photos": [
+    "/static/projects/project-3/brain.png"
+  ]
+},
+
     {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
+  "name": "Interactive Global News Explorer",
+  "link": "project-7",
+  "date": "23/12/2023",
+  "short": "Develop an interactive visualization tool for analyzing GDELT data using Power BI.",
+  "skills": "Power BI, Data Analysis, Data Visualization, Geospatial Analysis, Project Management, User Interface Design",
+  "weight": 1,
+  "tags": [
+    "Data Visualization",
+    "Interactive Dashboard",
+    "Global News Analysis"
+  ],
+  "photos": [
+    "/static/projects/project-7/News.png"
+  ]
+},
+    {
+      "name": "Spaceship Titanic",
+      "link": "project-6",
+      "date": "23/12/2023",
+      "short": "Analyze and predict the survival of passengers on a fictional spaceship Titanic.",
+      "skills": "Matplotlib, Numpy, Pandas, Python",
       "weight": 1,
       "tags": [
-        "media"
+        "Data Analysis",
+        "Predictive Modeling"
       ],
       "photos": [
-        "/static/projects/project-2/img.jpg"
+        "static/projects/project-6/Spaceship_Titanic.png"
       ]
     },
     {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
+      "name": "Crowd Density Estimation using Thermal Camera",
+      "link": "project-4",
+      "date": "23/12/2023",
+      "short": "Estimate the density of a crowd using thermal imaging and machine learning.",
+      "skills": "Flask, Numpy, Pandas, Python, SQL, TensorFlow",
       "weight": 1,
       "tags": [
-        "tech"
+        "Computer Vision",
+        "Thermal Imaging"
       ],
       "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 2,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 2,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 1,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 2,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 1,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 1,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 2,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 1,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 2,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 2,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 1,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 1,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 2,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 2,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 1,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
+        "/static/projects/project-4/CrowdDensity.png"
       ]
     }
   ]
